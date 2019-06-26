@@ -1,0 +1,40 @@
+
+	#ReturnTopBtn{ /*返回顶部按钮样式*/
+		height:40px;
+		width:40px;
+		position:fixed;/*相对于浏览器窗口定位，防止滑动*/
+		right:6px;
+		top:468px;
+		border-radius:20px;
+		border:1px #ccc solid;
+		box-shadow:0 0 8px #ccc;
+		z-index:20;
+		font-size:40px;
+		text-align:center;
+		line-height:40xp;
+		font-family:"微软雅黑";
+		cursor:pointer;
+		display:none;
+	}
+	#ReturnTopMar{
+		font-size:18px;
+		text-align:left;
+		line-height:40px;
+		font-family:"微软雅黑";
+		float:left;
+		display:none;
+	}
+	#ReturnTopFont{
+		color:#ccc;
+	}
+	#ReturnTopBtn:hover{ /*鼠标悬停样式*/
+		border:3px #86B2E9 solid;
+		width:110px;
+		background:rgba(99,184,255,0.5);
+	}
+	#ReturnTopBtn:hover #ReturnTopMar{
+		display:inline-block;
+	}
+	#ReturnTopBtn:hover #ReturnTopFont{
+		color:#4169E1;
+	}

@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" http-equiv="content-type" content="text/html"/>
+	<title>大话家</title>
+	<link rel="stylesheet" href="css/Introduction.css" /><!--菜单栏以上样式-->
+	<link rel="stylesheet" href="css/ReturnTop.css" /><!--返回顶部样式-->
+	<link rel="stylesheet" href="css/DetailInformation.css" /><!--主要内容样式-->
+	<script type="text/javascript" src="js/MenuTop.js"></script><!--菜单栏置顶效果-->
+	<script type="text/javascript" src="js/Introduction.js"></script><!--时间、输入框等动态效果-->
+	
+</head>
+<body id="Body" style="overflow:scroll;overflow-x:hidden;"><!--设置浏览窗口强制不显示滑动条-->
+	<script count="286" zindex="-2" opacity="0.9" color="255,255,0" type="text/javascript" src="js/BackgroundEffect.js"></script>    <!--用于设置背景样式-->
+	
+	<div id="Top-navigation-bar"><!--顶部导航条-->
+		<div id="Top01" style="padding-top:6px;">
+			<img id="LogoImg" src="images/Top-navigation/logo.png"/>
+			<img id="SloganImg" src="images/Top-navigation/slogan.png"/>
+			<div style="display:inline;float:right;"><a href="https://www.baidu.com/s?word=%E6%B1%9F%E8%A5%BF%E8%B5%A3%E5%B7%9E%E5%A4%A9%E6%B0%94&tn=58025142_5_oem_dg&ie=utf-8">
+				<img id="Weather" /><!--设置天气样式，根据时间修改天气标识-->
+				<span style="font-size:16px;margin-left:0;">晴 26~34℃ 良</span></a>
+			<a href="https://www.baidu.com/s?word=%E6%97%A5%E5%8E%86&tn=58025142_oem_dg&ie=utf-8"><span id="system-time"></span></a><!--设置系统时间-->
+			</div>
+		</div>
+		<div id="Top02" ><!--输入框效果-->
+			<img id="search-images-top" src="images/Top-navigation/baidu.png" />
+			<ul id="search-images-ul"><!--下拉搜索标识-->
+				<li><img src="images/Top-navigation/bing.png"></li>
+				<li><img src="images/Top-navigation/youku.png"></li>
+				<li><img src="images/Top-navigation/google.png"></li>
+				<li><img src="images/Top-navigation/default.png"></li>
+			</ul>
+			<form action="http://www.baidu.com" target="blank" ><!--默认百度搜索-->
+				<input type="text" id="Search-box" />
+				<button type="submit" id="Submit"></button>
+				<div id="line"></div>
+			</form>
+		</div>
+		<div id="Top03" style="padding-top:6px;">
+			<span id="Top03-head">常用网址</span>
+			<ul id="Top03Collect"><!--常用网址-->
+				<li>
+					<a href="https://www.baidu.com/index.php">
+						<img src="images/Top-navigation/淘宝.png">
+					</a>
+					<span>淘宝</span>
+				</li>
+				<li>
+					<a href="http://www.jd.com/">
+						<img src="images/Top-navigation/京东.png">
+					</a>
+					<span>京东</span>
+				</li>
+				<li>
+					<a href="https://ju.taobao.com/">
+						<img src="images/Top-navigation/聚划算.png">
+					</a>
+					<span style="padding-left:10px;">聚划算</span>
+				</li>
+				<li>
+					<a href="http://www.le.com/">
+						<img src="images/Top-navigation/乐视.png">
+					</a>
+					<span>乐视</span>
+				</li>
+				<li>
+					<a href="https://www.tmall.com/">
+						<img src="images/Top-navigation/天猫.png">
+					</a>
+					<span>天猫</span>
+				</li>
+				<li>
+					<a href="http://mini.eastday.com/">
+						<img src="images/Top-navigation/头条.png">
+					</a>
+					<span>头条</span>
+				</li>
+				<li>
+					<a href="http://www.uc123.com/">
+						<img src="images/Top-navigation/网址导航.png">
+					</a>
+					<span style="padding-left:2px;">网址导航</span>
+				</li>
+				<li>
+					<a href="https://weibo.com/nguide/interests">
+						<img src="images/Top-navigation/新浪微博.png">
+					</a>
+					<span style="padding-left:2px;">新浪微博</span>
+				</li>
+				<li id="CustomLi" style="display:none;">
+					<a id="CustomA" href="#"><!--自定义 动态效果在JS文件-->
+						<img id="CustomImg" src="images/Top-navigation/自定义.png" />
+					</a>
+					<span id="CustomSpan" style="padding-left:8px;">自定义</span>
+				</li>
+				<li>
+					<a href="#"><!--替换成添加之后的网址-->
+						<img id="Top03CollectAdd" src="images/Top-navigation/添加.png">
+					</a>
+					<span></span>
+				</li>
+			</ul>
+			<div id="ProjectileFrameCover"><!--自定义添加网址效果-->
+				<div id="ProjectileFrame">
+					<p id="ProjectileFrameP">[关闭]</p>
+					<span>添加常用网址</span><br/>
+					<span>网址:</span><input type="text" id="ProjectileFrame1"/>
+					<span>标题:</span><input type="text" id="ProjectileFrame2"/>
+					<button id="ProjectileFrameBtn">确定</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="MenuBar"><!--菜单栏-->
+		<a href="#" ><img id="MenuBarLogo" src="images/Menu-icon/logo.png"/></a>
+		<ul>
+			<li id="MenuBarLi1"><a href="index.html">首页<div></div></a></li>
+			<li id="MenuBarLi2"><a href="index.html#MenuBar">运营营销<div></div></a></li><!--点击进行锚点定位-->
+			<li id="MenuBarLi3"><a href="index.html#Anchors1">电子商务<div></div></a></li><!--点击进行锚点定位-->
+			<li id="MenuBarLi3"><a href="index.html#Anchors2">数据信息<div></div></a></li>
+			<li id="MenuBarLi4"><a href="index.html#Anchors3">实用工具<div></div></a></li>
+			<li id="MenuBarLi5"><a href="MoreInformation.html" style="color:white;">更多<div></div></a></li><!--点击跳转HTML文件-->
+			<li id="MenuBarLi6"><a href="AboutWe.html">关于我们<div></div></a></li>
+		</ul><!--点击跳转HTML文件-->
+	</div>
+	<div id="Marketing">
+		<div id="MarketingTitle">营运营销</div> 
+		<ul id="MarketingMenu">
+			<li id="MarketingMenu1">新媒体推广</li>
+			<li id="MarketingMenu2">自媒体辅助</li>
+			<li id="MarketingMenu3">发现与宣传</li>
+			<li id="MarketingMenu4">SEO/SEM</li>
+		</ul>
+		<ul id="MarketingSummary">
+			<li><a href="https://om.qq.com/userAuth/index" style="color:black;">
+				<p id="MarketingSummaryP1">企业媒体平台</p>
+				<p id="MarketingSummaryP2">腾讯全平台自媒体管理</p>
+				<img src="images/Menu-icon/Marketing/阿里妈妈.png" />
+			</a></li><div name="SumDiv"></div><!--竖线边框-->
+			
+			<li><a href="http://mp.uc.cn/" style="color:black;">
+				<p id="MarketingSummaryP1">UC云观</p>
+				<p id="MarketingSummaryP2">UC自媒体平台</p>
+				<img src="images/Menu-icon/Marketing/UC.png" />
+			</a></li><div name="SumDiv"></div>
+			
+			<li><a href="https://mp.toutiao.com/" style="color:black;">
+				<p id="MarketingSummaryP1">头条号</p>
+				<p id="MarketingSummaryP2">今日头条自媒体平台</p>
+				<img src="images/Menu-icon/Marketing/头条.png" />
+			</a></li><div name="SumDiv"></div>
+			
+			<li><a href="http://baijiahao.baidu.com/" style="color:black;">
+				<p id="MarketingSummaryP1">百度百家号</p>
+				<p id="MarketingSummaryP2">百度旗下平台</p>
+				<img src="images/Menu-icon/Marketing/百度.png" />
+			</a></li><div name="SumDiv"></div>
+			
+			<li><a href="http://mp.sohu.com/" style="color:black;">
+				<p id="MarketingSummaryP1">搜狐公众平台</p>
+				<p id="MarketingSummaryP2">搜狐自媒体平台</p>
+				<img src="images/Menu-icon/Marketing/搜狐.png" />
+			</a></li>
+			
+			<li><a href="https://yiban.io/" style="color:black;">
+				<p id="MarketingSummaryP1">壹伴</p>
+				<p id="MarketingSummaryP2">提高新媒体写作效率</p>
+				<img src="images/Menu-icon/Marketing/壹伴.png" />
+			</a></li><div></div>
+			
+			<li><a href="http://www.ipaiban.com/" style="color:black;">
+				<p id="MarketingSummaryP1">西瓜集</p>
+				<p id="MarketingSummaryP2">让公众号营运更加简单</p>
+				<img src="images/Menu-icon/Marketing/西瓜集.png" />
+			</a></li><div></div>
+			
+			<li><a href="http://xmt.cn/" style="color:black;">
+				<p id="MarketingSummaryP1">新媒体管家</p>
+				<p id="MarketingSummaryP2">让新媒体营运更加简单</p>
+				<img src="images/Menu-icon/Marketing/新媒体管家.png" />
+			</a></li><div></div>
+			
+			<li><a href="http://www.parllay.cn/" style="color:black;">
+				<p id="MarketingSummaryP1">Parllay</p>
+				<p id="MarketingSummaryP2">内容营销平台</p>
+				<img src="images/Menu-icon/Marketing/Parllay.png" />
+			</a></li><div></div>
+			
+			<li><a href="http://gz.xiaoi.com/" style="color:black;">
+				<p id="MarketingSummaryP1">公众宝</p>
+				<p id="MarketingSummaryP2">微信机器人</p>
+				<img src="images/Menu-icon/Marketing/公众宝.png" />
+			</a></li>
+			
+			<li><a href="http://www.gsdata.cn/" style="color:black;">
+				<p id="MarketingSummaryP1">清博指数</p>
+				<p id="MarketingSummaryP2">新媒体大数据平台</p>
+				<img src="images/Menu-icon/Marketing/清博指数.png" />
+			</a></li><div></div>
+			
+			<li><a href="http://www.wenangou.com/" style="color:black;">
+				<p id="MarketingSummaryP1">文案狗</p>
+				<p id="MarketingSummaryP2">给文案狗一点灵感</p>
+				<img src="images/Menu-icon/Marketing/文案狗.png" />
+			</a></li><div></div>
+			
+			<li><a href="https://antv.alipay.com/" style="color:black;">
+				<p id="MarketingSummaryP1">易企秀</p>
+				<p id="MarketingSummaryP2">H5页面制作工具</p>
+				<img src="images/Menu-icon/Marketing/易企秀.png" />
+			</a></li><div></div>
+			
+			<li><a href="https://www.google.com/webmasters/tools/" style="color:black;">
+				<p id="MarketingSummaryP1">Google Search</p>
+				<p id="MarketingSummaryP2">谷歌搜索的站长平台</p>
+				<img src="images/Menu-icon/Marketing/Google.png" />
+			</a></li><div></div>
+			
+			<li><a href="http://zhanzhang.baidu.com/" style="color:black;">
+				<p id="MarketingSummaryP1">百度搜索</p>
+				<p id="MarketingSummaryP2">百度搜索的站长平台</p>
+				<img id="Anchors1" src="images/Menu-icon/Marketing/百度.png" />
+			</a></li>
+		</ul>
+	</div>
+	
+	<div id="EleCommerce">
+		<div id="EleCommerceTitle">电子商务</div>
+		<ul id="EleCommerceMenu">
+			<li id="EleCommerceMenu1">电商网站</li>
+			<li id="EleCommerceMenu2">电铺设计</li>
+			<li id="EleCommerceMenu3">规则投诉</li>
+			<li id="EleCommerceMenu4">电商工具</li>
+			<li id="EleCommerceMenu5">特色购物</li>
+		</ul>
+		<ul id="EleCommerceSummary">
+		<li><a href="https://rule.taobao.com/" style="color:black;">
+			<p id="EleCommerceSummaryP1">淘宝规则</p>
+			<p id="EleCommerceSummaryP2">淘宝网的管理规则明细</p>
+			<img src="images/Menu-icon/EleCommerce/淘宝.png" />
+		</a></li><div></div>
+		
+		<li><a href="https://guize.tmall.com/" style="color:black;">
+			<p id="EleCommerceSummaryP1">天猫规则</p>
+			<p id="EleCommerceSummaryP2">天猫的管理规则明细</p>
+			<img src="images/Menu-icon/EleCommerce/天猫.png" />
+		</a></li><div></div>
+		
+		<li><a href="http://help.jd.com/Vender/question-851.html" style="color:black;">
+			<p id="EleCommerceSummaryP1">京东规则</p>
+			<p id="EleCommerceSummaryP2">京东的管理规则明细</p>
+			<img src="images/Menu-icon/EleCommerce/京东.png" />
+		</a></li><div></div>
+		
+		<li><a href="http://sell.aliexpress.com/rules/index.htm" style="color:black;">
+			<p id="EleCommerceSummaryP1">速卖通规则</p>
+			<p id="EleCommerceSummaryP2">阿里速卖通规则明细</p>
+			<img src="images/Menu-icon/EleCommerce/速卖通.png" />
+		</a></li><div></div>
+		
+		<li><a href="https://jubao.taobao.com/" style="color:black;">
+			<p id="EleCommerceSummaryP1">淘宝全网举报</p>
+			<p id="EleCommerceSummaryP2">淘宝消费者举报平台</p>
+			<img src="images/Menu-icon/EleCommerce/阿里妈妈.png" />
+		</a></li>
+		
+		<li><a href="http://shuyuan.taobao.com/#!/index/index" style="color:black;">
+			<p id="EleCommerceSummaryP1">万堂书院</p>
+			<p id="EleCommerceSummaryP2">阿里妈妈旗下的自主学习平台</p>
+			<img src="images/Menu-icon/EleCommerce/万堂书院.png" />
+		</a></li><div></div>
+		
+		<li><a href="https://sycm.taobao.com/portal/index.htm" style="color:black;">
+			<p id="EleCommerceSummaryP1">生意参谋</p>
+			<p id="EleCommerceSummaryP2">淘宝官方的竞争情报平台</p>
+			<img src="images/Menu-icon/EleCommerce/生意参谋.png" />
+		</a></li><div></div>
+		
+		<li><a href="https://fuwu.taobao.com/index.html" style="color:black;">
+			<p id="EleCommerceSummaryP1">服务市场</p>
+			<p id="EleCommerceSummaryP2">淘宝官方的卖家服务市场</p>
+			<img src="images/Menu-icon/EleCommerce/服务市场.png" />
+		</a></li><div></div>
+		
+		<li><a href="https://www.dianchacha.com/" style="color:black;">
+			<p id="EleCommerceSummaryP1">店查查</p>
+			<p id="EleCommerceSummaryP2">天猫淘宝店铺数据分析工具</p>
+			<img src="images/Menu-icon/EleCommerce/店查查.png" />
+		</a></li><div></div>
+		
+		<li><a href="http://www.shengyeji.com/yeji.php" style="color:black;">
+			<p id="EleCommerceSummaryP1">升业绩</p>
+			<p id="EleCommerceSummaryP2">淘宝SEO营销辅助工具</p>
+			<img src="images/Menu-icon/EleCommerce/升业绩.png" />
+		</a></li>
+		
+		<li><a href="http://www.moojing.com/" style="color:black;">
+			<p id="EleCommerceSummaryP1">魔镜</p>
+			<p id="EleCommerceSummaryP2">清跨电商平台的竞品情报</p>
+			<img src="images/Menu-icon/EleCommerce/魔镜.png" />
+		</a></li><div></div>
+		
+		<li><a href="https://xiangqing.taobao.com/" style="color:black;">
+			<p id="EleCommerceSummaryP1">淘宝神笔</p>
+			<p id="EleCommerceSummaryP2">淘宝官方店铺模板平台</p>
+			<img src="images/Menu-icon/EleCommerce/淘宝神笔.png" />
+		</a></li><div></div>
+		
+		<li><a href="http://startupstockphotos.com/" style="color:black;">
+			<p id="EleCommerceSummaryP1">千图工具</p>
+			<p id="EleCommerceSummaryP2">常用的设计营运工具</p>
+			<img src="images/Menu-icon/EleCommerce/千图淘宝工具.png" />
+		</a></li><div></div>
+		</ul>
+	</div>
+	
+	<div id="DataInformation">
+		<div id="DataInformaTitle">数据信息</div>
+		<ul id="DataInformaMenu">
+			<li id="DataInformaMenu1">数据来源</li>
+			<li id="DataInformaMenu2">数据新闻</li>
+			<li id="DataInformaMenu3">数据产品</li>
+			<li id="DataInformaMenu4">统计分析</li>
+		</ul>
+		<ul id="DataInformaSummary">
+		<li><a href="http://data.stats.gov.cn/" style="color:black;">
+			<p id="DataInformaSummaryP1">中国国家数据中心</p>
+			<p id="DataInformaSummaryP2">统计局提供丰富数据</p>
+			<img src="images/Menu-icon/DataInforma/中国国家数据中心.png" />
+		</a></li><div></div>
+		
+		<li><a href="http://www.cnnic.net.cn/" style="color:black;">
+			<p id="EleCommerceSummaryP1">CNNIC</p>
+			<p id="EleCommerceSummaryP2">中国互联网信息中心</p>
+			<img src="images/Menu-icon/DataInforma/CNNIC.png" />
+		</a></li><div></div>
+		
+		<li><a href="http://www.google.com/trends/explore" style="color:black;">
+			<p id="EleCommerceSummaryP1">谷歌指数</p>
+			<p id="EleCommerceSummaryP2">谷歌搜索的关键词热度</p>
+			<img src="images/Menu-icon/DataInforma/谷歌指数.png" />
+		</a></li><div></div>
+		
+		<li><a href="https://alizs.taobao.com/" style="color:black;">
+			<p id="EleCommerceSummaryP1">阿里指数</p>
+			<p id="EleCommerceSummaryP2">阿里平台展示的消费数据</p>
+			<img src="images/Menu-icon/DataInforma/阿里指数.png" />
+		</a></li><div></div>
+		
+		<li><a href="http://mi.talkingdata.com/" style="color:black;">
+			<p id="EleCommerceSummaryP1">移动观象台</p>
+			<p id="EleCommerceSummaryP2">移动行业数据平台</p>
+			<img src="images/Menu-icon/DataInforma/移动观象台.png" />
+		</a></li>
+		
+		<li><a href="http://www.aliresearch.com/" style="color:black;">
+			<p id="EleCommerceSummaryP1">阿里研究院</p>
+			<p id="EleCommerceSummaryP2">阿里官方数据研究媒体</p>
+			<img src="images/Menu-icon/DataInforma/阿里研究院.png" />
+		</a></li><div></div>
+		
+		<li><a href="http://djchina.org/" style="color:black;">
+			<p id="EleCommerceSummaryP1">数据新闻</p>
+			<p id="EleCommerceSummaryP2">数据新闻实践引介平台</p>
+			<img src="images/Menu-icon/DataInforma/数据新闻.png" />
+		</a></li><div></div>
+		
+		<li><a href="http://www.iresearch.cn/" style="color:black;">
+			<p id="EleCommerceSummaryP1">艾瑞网</p>
+			<p id="EleCommerceSummaryP2">互联网数据研究报告</p>
+			<img src="images/Menu-icon/DataInforma/艾瑞网.png" />
+		</a></li><div></div>
+		
+		<li><a href="http://www.nielsen.com/" style="color:black;">
+			<p id="EleCommerceSummaryP1">尼尔森报告</p>
+			<p id="EleCommerceSummaryP2">消费者信息研究网站</p>
+			<img src="images/Menu-icon/DataInforma/尼尔森报告.png" />
+		</a></li><div></div>
+		
+		<li><a href="https://data.aliyun.com/" style="color:black;">
+			<p id="EleCommerceSummaryP1">阿里云大数据</p>
+			<p id="EleCommerceSummaryP2">阿里云数据产品</p>
+			<img src="images/Menu-icon/DataInforma/阿里云.png" />
+		</a></li>
+		
+		<li><a href="http://apistore.baidu.com/" style="color:black;">
+			<p id="EleCommerceSummaryP1">百度APIStore</p>
+			<p id="EleCommerceSummaryP2">百度的数据产品</p>
+			<img src="images/Menu-icon/DataInforma/百度APIStore.png" />
+		</a></li><div></div>
+		
+		<li><a href="https://www.qcloud.com/solution/bigdata" style="color:black;">
+			<p id="EleCommerceSummaryP1">腾讯云大数据</p>
+			<p id="EleCommerceSummaryP2">腾讯的数据产品</p>
+			<img src="images/Menu-icon/DataInforma/腾讯云大数据.png" />
+		</a></li><div></div>
+		
+		<li><a href="http://wx.jcloud.com/" style="color:black;">
+			<p id="EleCommerceSummaryP1">京东万象</p>
+			<p id="EleCommerceSummaryP2">京东的数据产品</p>
+			<img src="images/Menu-icon/DataInforma/京东.png" />
+		</a></li><div></div>
+		
+		<li><a href="http://apistore.baidu.com/" style="color:black;">
+			<p id="EleCommerceSummaryP1">AWS公共数据集</p>
+			<p id="EleCommerceSummaryP2">亚马逊的数据产品</p>
+			<img id="Anchors3" src="images/Menu-icon/DataInforma/AWS公共数据集.png" />
+		</a></li><div></div>
+		
+		</ul>
+	</div>
+	
+	<div id="PracticalTool">
+		<div id="PracticalToolTitle">实用工具</div>
+		<ul id="PracticalToolMenu">
+			<li id="PracticalToolMenu1">图像影音</li>
+			<li id="PracticalToolMenu2">前端设计</li>
+			<li id="PracticalToolMenu3">营运工具</li>
+			<li id="PracticalToolMenu4">境外支付</li>
+		</ul>
+		<ul id="PracticalToolSummary">
+		<li><a href="https://antv.alipay.com/" style="color:black;">
+			<p id="PracticalToolSummaryP1">Antv</p>
+			<p id="PracticalToolSummaryP2">蚂蚁数据可视化解决方案</p>
+			<img src="images/Menu-icon/PracticalTool/Antv.png" />
+		</a></li><div></div>
+		
+		<li><a href="http://echarts.baidu.com/" style="color:black;">
+			<p id="PracticalToolSummaryP1">ECharts</p>
+			<p id="PracticalToolSummaryP2">百度数据可视化</p>
+			<img src="images/Menu-icon/PracticalTool/ECharts.png" />
+		</a></li><div></div>
+		
+		<li><a href="http://naotu.baidu.com/" style="color:black;">
+			<p id="PracticalToolSummaryP1">百度脑图</p>
+			<p id="PracticalToolSummaryP2">便捷的思维导图工具</p>
+			<img src="images/Menu-icon/PracticalTool/百度脑图.png" />
+		</a></li><div></div>
+		
+		<li><a href="http://tool.lu/" style="color:black;">
+			<p id="PracticalToolSummaryP1">程序员的工具箱</p>
+			<p id="PracticalToolSummaryP2">各种方便小工具</p>
+			<img src="images/Menu-icon/PracticalTool/程序员的工具箱.png" />
+		</a></li><div></div>
+		
+		<li><a href="http://tool.chinaz.com/" style="color:black;">
+			<p id="PracticalToolSummaryP1">站长工具</p>
+			<p id="PracticalToolSummaryP2">便捷的SEO站长工具</p>
+			<img src="images/Menu-icon/PracticalTool/站长工具.png" />
+		</a></li>
+		
+		<li><a href="https://wj.qq.com/" style="color:black;">
+			<p id="PracticalToolSummaryP1">腾讯问卷</p>
+			<p id="PracticalToolSummaryP2">腾讯官方问卷调查平台</p>
+			<img src="images/Menu-icon/PracticalTool/腾讯问卷.png" />
+		</a></li><div></div>
+		
+		<li><a href="https://www.sojump.com/" style="color:black;">
+			<p id="PracticalToolSummaryP1">问卷星</p>
+			<p id="PracticalToolSummaryP2">国内较大的问卷调查平台</p>
+			<img src="images/Menu-icon/PracticalTool/问卷星.png" />
+		</a></li><div></div>
+		
+		<li><a href="http://www.mikecrm.com/" style="color:black;">
+			<p id="PracticalToolSummaryP1">麦客</p>
+			<p id="PracticalToolSummaryP2">丰富强大的客户关系处理服务</p>
+			<img src="images/Menu-icon/PracticalTool/麦客.png" />
+		</a></li><div></div>
+		
+		<li><a href="http://www.zxtb.net/" style="color:black;">
+			<p id="PracticalToolSummaryP1">小语言</p>
+			<p id="PracticalToolSummaryP2">电商店铺设计工具</p>
+			<img src="images/Menu-icon/PracticalTool/小语言.png" />
+		</a></li><div></div>
+		
+		<li><a href="https://cloudconvert.com/" style="color:black;">
+			<p id="PracticalToolSummaryP1">CloudConvert</p>
+			<p id="PracticalToolSummaryP2">文件在线转换工具</p>
+			<img src="images/Menu-icon/PracticalTool/CloudConvert.png" />
+		</a></li>
+		
+		<li><a href="http://www.qiuziti.com/" style="color:black;">
+			<p id="PracticalToolSummaryP1">求字体</p>
+			<p id="PracticalToolSummaryP2">上传图片查找字体和稿件</p>
+			<img src="images/Menu-icon/PracticalTool/求字体.png" />
+		</a></li><div></div>
+		
+		<li><a href="https://cli.im/" style="color:black;">
+			<p id="PracticalToolSummaryP1">草料</p>
+			<p id="PracticalToolSummaryP2">二维码生成制作工具</p>
+			<img src="images/Menu-icon/PracticalTool/草料.png" />
+		</a></li><div></div>
+		
+		<li><a href="http://optimizilla.com/" style="color:black;">
+			<p id="PracticalToolSummaryP1">Optimizila</p>
+			<p id="PracticalToolSummaryP2">在线图片无损压缩工具</p>
+			<img src="images/Menu-icon/PracticalTool/Optimizila.png" />
+		</a></li><div></div>
+		
+		<li><a href="https://smallpdf.com/" style="color:black;">
+			<p id="PracticalToolSummaryP1">Smallpdf</p>
+			<p id="PracticalToolSummaryP2">专注PDF转化压缩</p>
+			<img src="images/Menu-icon/PracticalTool/Smallpdf.png" />
+		</a></li><div></div>
+		
+		<li><a href="http://www.adobe.com/cn/" style="color:black;">
+			<p id="PracticalToolSummaryP1">Adobe Color CC</p>
+			<p id="PracticalToolSummaryP2">Adobe专业配色工具</p>
+			<img src="images/Menu-icon/PracticalTool/Adobe Color CC.png" />
+		</a></li>
+		</ul>
+	</div>
+	
+	<div id="ReturnTopBtn"><!--返回顶部按钮-->
+		<a href="#Top-navigation-bar">
+		<font id="ReturnTopFont"><span id="ReturnTopMar">返回顶部</span>^</font>
+		</a>
+	</div>
+</body>
+</html>

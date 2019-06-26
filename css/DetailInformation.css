@@ -1,0 +1,141 @@
+	#Marketing,#EleCommerce{ /*第一个部分和第二部分*/
+			height:660px;
+			margin-top:48px;
+			font-family:"微软雅黑";
+			z-index:10;
+		}
+		#MarketingTitle,#EleCommerceTitle{
+			font-size:22px;
+			width:90px;
+			margin:0 590px;
+			cursor:pointer;
+			margin-bottom:16px;
+			border-bottom:2px rgba(0,0,0,0) solid;
+		}
+		#MarketingMenu,#EleCommerceMenu{
+			width:560px;
+			height:26px;
+			margin-left:400px;
+		}
+		#MarketingMenu li,#EleCommerceMenu li{
+			font-size:16px;
+			display:inline;
+			border-bottom:2px rgba(0,0,0,0) solid;
+			border-right:1px #ccc solid;
+			padding:2px 16px;
+			cursor:pointer;
+		}
+		#MarketingTitle:hover,#EleCommerceTitle:hover{ /*显示下划线*/
+			border-bottom:2px #86B2E9 solid;
+		}
+		#MarketingMenu li:hover,#EleCommerceMenu li:hover{
+			border-bottom:2px #86B2E9 solid;
+		}
+		#MarketingSummary li,#EleCommerceSummary li{ 
+			height:180px;
+			width:208px;
+			display:inline-block;
+			margin:22px 20px 0 20px;
+			cursor:pointer;
+		}
+		#MarketingSummary li:hover,#EleCommerceSummary li:hover{ /*设置 块 的背景样式*/
+			background-color:rgba(134,178,233,0.7);
+		}
+		#MarketingSummaryP1,#EleCommerceSummaryP1{
+			font-size:19px;
+			text-align:center;
+			margin-top:24px;
+		}
+		#MarketingSummaryP2,#EleCommerceSummaryP2{
+			font-size:16px;
+			text-align:center;
+			padding-top:8px;
+			color:#888;
+		}
+		#MarketingSummary img,#EleCommerceSummary img{
+			padding-top:22px;
+			float:right;
+			padding-right:98px;
+			width:20px;
+			height:20px;
+		}
+		#MarketingSummary div,#EleCommerceSummary div{
+			display:inline-block;
+			width:1px;
+			height:86px;
+			position:relative;
+			top:76px;
+			background-color:#ccc;
+			z-index:-2;
+		}
+		
+		#DataInformation,#PracticalTool{/*第三个部分和第四部分*/
+			height:660px;
+			margin-top:48px;
+			font-family:"微软雅黑";
+			z-index:10;
+		}
+		#DataInformaTitle,#PracticalToolTitle{
+			font-size:22px;
+			width:90px;
+			margin:0 590px;
+			cursor:pointer;
+			margin-bottom:16px;
+			border-bottom:2px rgba(0,0,0,0) solid;
+		}
+		#DataInformaMenu,#PracticalToolMenu{
+			width:560px;
+			height:26px;
+			margin-left:420px;
+		}
+		#DataInformaMenu li,#PracticalToolMenu li{
+			font-size:16px;
+			display:inline;
+			border-bottom:2px rgba(0,0,0,0) solid;
+			border-right:1px #ccc solid;
+			padding:2px 16px;
+			cursor:pointer;
+		}
+		#DataInformaTitle:hover,#PracticalToolTitle:hover{
+			border-bottom:2px #86B2E9 solid;
+		}
+		#DataInformaMenu li:hover,#PracticalToolMenu li:hover{
+			border-bottom:2px #86B2E9 solid;
+		}
+		#DataInformaSummary li,#PracticalToolSummary li{
+			height:180px;
+			width:208px;
+			display:inline-block;
+			margin:22px 20px 0 20px;
+			cursor:pointer;
+		}
+		#DataInformaSummary li:hover,#PracticalToolSummary li:hover{
+			background-color:rgba(134,178,233,0.7);
+		}
+		#DataInformaSummaryP1,#PracticalToolSummaryP1{
+			font-size:19px;
+			text-align:center;
+			margin-top:24px;
+		}
+		#DataInformaSummaryP2,#PracticalToolSummaryP2{
+			font-size:16px;
+			text-align:center;
+			padding-top:8px;
+			color:#888;
+		}
+		#DataInformaSummary img,#PracticalToolSummary img{
+			padding-top:22px;
+			float:right;
+			padding-right:98px;
+			width:20px;
+			height:20px;
+		}
+		#DataInformaSummary div,#PracticalToolSummary div{
+			display:inline-block;
+			width:1px;
+			height:86px;
+			position:relative;
+			top:76px;
+			background-color:#ccc;
+			z-index:-2;
+		}

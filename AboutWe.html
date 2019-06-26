@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+	<title>关于我们</title>
+	<link rel="stylesheet" href="Introduction.css" />
+	<link rel="stylesheet" href="ReturnTop.css" />
+	<script type="text/javascript" src="MenuTop.js"></script>
+	<script type="text/javascript" src="Introduction.js"></script>
+	<style type="text/css">
+		#AboutWe{
+			padding-top:48px;
+			z-index:10;
+		}
+		#AboutWe div{
+			padding-top:28px;
+		}
+		#AboutWe div div{
+			margin-left:120px;
+			font-size:24px;
+			color:#86B2E9;
+			font-family:"微软雅黑";
+		}
+		#AboutWe div p{
+			margin-left:120px;
+			font-size:18px;
+			margin-top:8px;
+			width:1000px;
+			color:#777;
+			font-family:"微软雅黑";
+		}
+		#AboutWe ul{
+			margin-top:18px;
+			height:50px;
+			width:500px;
+			margin-left:420px;
+		}
+		#AboutWe img{
+			height:42px;
+			width:42px;
+			float:left;
+			margin-left:40px;
+		} 
+		#AboutLi1 img:hover{
+			content:url("images/AboutWe/QQ1.png");
+		}
+		#AboutLi2 img:hover{
+			content:url("images/AboutWe/微博1.png");
+		}
+		#AboutLi3 img:hover{
+			content:url("images/AboutWe/QQ空间1.png");
+		}
+		#AboutLi4 img:hover{
+			content:url("images/AboutWe/豆瓣1.png");
+		}
+		#AboutLi5 img:hover{
+			content:url("images/AboutWe/微信1.png");
+		}
+		#bottom{
+			margin-top:28px;
+			background-color:rgba(34,34,34,0.8);
+			font-size:16px;
+			font-family:"微软雅黑";
+		}
+		#bottom p{
+			color:#ccc;
+			padding-top:8px;
+			text-align:center;
+		}
+		#bottom span{
+			color:#ccc;
+			display:block;
+			padding:12px 0 12px 420px;
+			
+		}
+	</style>
+	
+</head>
+<body id="Body" style="overflow:scroll;overflow-x:hidden;">
+	<script count="286" zindex="-2" opacity="0.9" color="255,255,0" type="text/javascript" src="BackgroundEffect.js"></script>    <!--用于设置背景样式-->
+	
+	<div id="Top-navigation-bar">
+		<div id="Top01" style="padding-top:6px;">
+			<img id="LogoImg" src="images/Top-navigation/logo.png"/>
+			<img id="SloganImg" src="images/Top-navigation/slogan.png"/>
+			<div style="display:inline;float:right;"><a href="https://www.baidu.com/s?word=%E6%B1%9F%E8%A5%BF%E8%B5%A3%E5%B7%9E%E5%A4%A9%E6%B0%94&tn=58025142_5_oem_dg&ie=utf-8">
+				<img id="Weather" />
+				<span style="font-size:16px;margin-left:0;">晴 26~34℃ 良</span></a>
+			<a href="https://www.baidu.com/s?word=%E6%97%A5%E5%8E%86&tn=58025142_oem_dg&ie=utf-8"><span id="system-time"></span></a>
+			</div>
+		</div>
+		<div id="Top02" >
+			<img id="search-images-top" src="images/Top-navigation/baidu.png" />
+			<ul id="search-images-ul">
+				<li><img src="images/Top-navigation/bing.png"></li>
+				<li><img src="images/Top-navigation/youku.png"></li>
+				<li><img src="images/Top-navigation/google.png"></li>
+				<li><img src="images/Top-navigation/default.png"></li>
+			</ul>
+			<form action="http://www.baidu.com/" target="blank" >
+				<input type="text" id="Search-box" />
+				<button type="submit" id="Submit"></button>
+				<div id="line"></div>
+			</form>
+		</div>
+		<div id="Top03" style="padding-top:6px;">
+			<span id="Top03-head">常用网址</span>
+			<ul id="Top03Collect">
+				<li>
+					<a href="https://www.baidu.com/index.php">
+						<img src="images/Top-navigation/淘宝.png">
+					</a>
+					<span>淘宝</span>
+				</li>
+				<li>
+					<a href="http://www.jd.com/">
+						<img src="images/Top-navigation/京东.png">
+					</a>
+					<span>京东</span>
+				</li>
+				<li>
+					<a href="https://ju.taobao.com/">
+						<img src="images/Top-navigation/聚划算.png">
+					</a>
+					<span style="padding-left:10px;">聚划算</span>
+				</li>
+				<li>
+					<a href="http://www.le.com/">
+						<img src="images/Top-navigation/乐视.png">
+					</a>
+					<span>乐视</span>
+				</li>
+				<li>
+					<a href="https://www.tmall.com/">
+						<img src="images/Top-navigation/天猫.png">
+					</a>
+					<span>天猫</span>
+				</li>
+				<li>
+					<a href="http://mini.eastday.com/">
+						<img src="images/Top-navigation/头条.png">
+					</a>
+					<span>头条</span>
+				</li>
+				<li>
+					<a href="http://www.uc123.com/">
+						<img src="images/Top-navigation/网址导航.png">
+					</a>
+					<span style="padding-left:2px;">网址导航</span>
+				</li>
+				<li>
+					<a href="https://weibo.com/nguide/interests">
+						<img src="images/Top-navigation/新浪微博.png">
+					</a>
+					<span style="padding-left:2px;">新浪微博</span>
+				</li>
+				<li id="CustomLi" style="display:none;">
+					<a id="CustomA" href="#">
+						<img id="CustomImg" src="images/Top-navigation/自定义.png" />
+					</a>
+					<span id="CustomSpan" style="padding-left:8px;">自定义</span>
+				</li>
+				<li>
+					<a href="#">
+						<img id="Top03CollectAdd" src="images/Top-navigation/添加.png">
+					</a>
+					<span></span>
+				</li>
+			</ul>
+			<div id="ProjectileFrameCover">
+				<div id="ProjectileFrame">
+					<p id="ProjectileFrameP">[关闭]</p>
+					<span>添加常用网址</span><br/>
+					<span>网址:</span><input type="text" id="ProjectileFrame1"/>
+					<span>标题:</span><input type="text" id="ProjectileFrame2"/>
+					<button id="ProjectileFrameBtn">确定</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="MenuBar">
+		<a href="#" ><img id="MenuBarLogo" src="images/Menu-icon/logo.png"/></a>
+		<ul>
+			<li id="MenuBarLi1"><a href="index.html">首页<div></div></a></li>
+			<li id="MenuBarLi2"><a href="index.html#MenuBar">运营营销<div></div></a></li>
+			<li id="MenuBarLi3"><a href="index.html#Anchors1">电子商务<div></div></a></li>
+			<li id="MenuBarLi3"><a href="index.html#Anchors2">数据信息<div></div></a></li>
+			<li id="MenuBarLi4"><a href="index.html#Anchors3">实用工具<div></div></a></li>
+			<li id="MenuBarLi5"><a href="MoreInformation.html" style="color:white;">更多<div></div></a></li>
+			<li id="MenuBarLi6"><a href="AboutWe.html">关于我们<div></div></a></li>
+		</ul>
+	</div>
+	
+	<div id="AboutWe">
+		<div>
+			<div>制作动机</div>
+			<P>&nbsp &nbsp &nbsp &nbsp信息时代的到来，我们的生活和工作都变得十分的便捷和高效。同时，也带来了一些问题，各种信息资源，纷繁复杂，我们都不到自己需要什么。在平时自己学习和生活的时候，就发现一些行业中有用的工具并不被入门者熟知。而且自己平时搜索这些网站也比较麻烦，经常是用完不保存，有时候，即使你保存网页，随着时间的和数量的增加，查找起来也是比较麻烦的。因此就花了一定的时间开始收集相关网站来做一个导航。</P>
+		</div>
+		
+		<div>
+			<div>网站介绍</div>
+			<P>&nbsp &nbsp &nbsp &nbsp大话家，是一个为新媒体和电商发烧者提供的导航网页，这里为你提供了各种媒体和电商网页的链接，是从事新媒体和电商的工作人员必备的网页工具。</P>
+		</div>
+		
+		<div>
+			<div>联系我们</div>
+			<P>&nbsp &nbsp &nbsp &nbsp QQ:1158805583</P>
+			<p>&nbsp &nbsp &nbsp &nbsp邮箱:guomingde463@foxmail.com</p>
+			<P>&nbsp &nbsp &nbsp &nbsp地址:江西省赣州市章贡区客家大道156号</P>
+			<P>&nbsp &nbsp &nbsp &nbsp邮编:341000</P>
+		</div>
+		
+		<div>
+			<div>技术支持</div>
+			<P>&nbsp &nbsp &nbsp &nbsp 江西理工大学应用科学学院通信161班 郭明德</P>
+		</div>
+		
+		<div>
+			<div>推荐我们</div>
+			<P>&nbsp &nbsp &nbsp &nbsp 感谢您为我们宣传，由您的鼓励和支持我们会变得更好</P>
+			<ul>
+				<li id="AboutLi1">
+					<a href="https://im.qq.com/"><img src="images/AboutWe/QQ.png"></a>
+				</li>
+				<li id="AboutLi2">
+					<a href="https://weibo.com/u/6046032918/home?wvr=5"><img src="images/AboutWe/微博.png"></a>
+				</li>
+				<li id="AboutLi3">
+					<a href="https://qzone.qq.com/"><img src="images/AboutWe/QQ空间.png"></a>
+				</li>
+				<li id="AboutLi4">
+					<a href="https://accounts.douban.com/login?alias=&redir=https%3A%2F%2Fwww.douban.com%2F&source=index_nav&error=1001"><img src="images/AboutWe/豆瓣.png"></a>
+				</li>
+				<li id="AboutLi5">
+					<a href="https://wx.qq.com/"><img src="images/AboutWe/微信.png"></a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div id="bottom">
+		<p>网络故障申报电话:18370815482</p>
+		<p>Copyright © 2018 www.baidu.com 大话家 All Rights Reserved
+</p>
+		<span>赣ICP备05002434号&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 赣公网安备 36070202000070号</span>
+	</div>
+	<div id="ReturnTopBtn">
+		<a href="#Top-navigation-bar">
+		<font id="ReturnTopFont"><span id="ReturnTopMar">返回顶部</span>^</font>
+		</a>
+	</div>
+</body>
+</html>
